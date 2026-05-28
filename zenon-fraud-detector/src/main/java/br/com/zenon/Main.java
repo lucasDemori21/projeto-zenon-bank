@@ -20,9 +20,8 @@ public class Main {
         IO.println("---------------------------------------------");
 
         TransactionIngestor transactionIngestor = new TransactionIngestor();
-        List<Transaction> transactions = transactionIngestor.read("data/PS_20174392719_1491204439457_log.csv");
+        List<Transaction> transactions = transactionIngestor.read("data/paysim_with_bad_data.csv");
         IO.println(transactions.size());
 
-        transactions.stream().limit(10).forEach(IO::println);
     }
 }
