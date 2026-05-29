@@ -4,12 +4,11 @@ import java.math.BigDecimal;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
-import java.util.Objects;
 import java.util.Optional;
 
 public class TransactionIngestor {
 
-    private static final int FRAUD_LIMIT = 50_000;
+    private static final int FRAUD_LIMIT = 100_000;
 
     public List<Transaction> read(String filename) {
         Path path = Path.of(filename);
